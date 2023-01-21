@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SnowRunner cheatsheet</title>
+  <meta name="description" content="Very simple and printable SnowRunner information">
+  <meta name="author" content="barbeque-squared">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="cargo.js"></script>
+  <!-- also load all regions as javascript objects, because file:// can't do fetch -->
+  <script type="text/javascript" src="regions/yukon.js.html"></script>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body onLoad="pageload()">
+  <h1>SnowRunner cheatsheet</h1>
+  <!-- CARGO SIZES START -->
+  <div class="cargo-sizes">
+    <div class="content">
+      <div class="row">
+        <div class="cargo-size cargo-size-1">
+          <h2>1</h2>
+          <div class="cargo-icons">
+            <c-bricks></c-bricks>
+            <c-cellulose></c-cellulose>
+            <c-cement></c-cement>
+            <c-concrete-blocks></c-concrete-blocks>
+            <c-consumables></c-consumables>
+            <c-drilling-spare-parts></c-drilling-spare-parts>
+            <c-fuel></c-fuel>
+            <c-metal-rolls></c-metal-rolls>
+            <c-oil-barrels></c-oil-barrels>
+            <c-packaged-sand></c-packaged-sand>
+            <c-secure-container></c-secure-container>
+            <c-service-spare-parts></c-service-spare-parts>
+            <c-vehicle-spare-parts></c-vehicle-spare-parts>
+            <c-wooden-planks></c-wooden-planks>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cargo-size">
+          <h2>2</h2>
+          <div class="cargo-icons">
+            <c-cabin></c-cabin>
+            <c-cargo-container></c-cargo-container>
+            <c-concrete-slab></c-concrete-slab>
+            <c-medium-pipes></c-medium-pipes>
+            <c-metal-beams></c-metal-beams>
+            <c-small-pipes></c-small-pipes>
+          </div>
+        </div>
+        <div class="cargo-size">
+          <h2>4</h2>
+          <div class="cargo-icons">
+            <c-drilling-equipment></c-drilling-equipment>
+            <c-large-pipe></c-large-pipe>
+            <c-oversized-cargo></c-oversized-cargo>
+            <c-rails></c-rails>
+            <p>Rails: flatbed only! no sidebed!</p>
+          </div>
+        </div>
+        <div class="cargo-size">
+          <h2>5</h2>
+          <div class="cargo-icons">
+            <c-industrial-boiler></c-industrial-boiler>
+            <c-oil-rig-drill></c-oil-rig-drill>
+            <c-rail-section></c-rail-section>
+            <c-sequoia></c-sequoia>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CARGO SIZES END -->
+  <div class="flex">
+    
+    <!-- Common info start -->
+    <div>
+      <table class="notes">
+        <caption>Tyre choice</caption>
+        <thead>
+        <tr>
+          <th scope="col">Vehicle</th>
+          <th scope="col">Choice</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>CAT-745C</td>
+          <td rowspan="2">MSH III</td>
+        </tr>
+        <tr>
+          <td>Azov 42-20 Antarctic</td>
+        </tr>
+        <tr>
+          <td>KOLOB 74941</td>
+          <td rowspan="2">MSH II</td>
+        </tr>
+        <tr>
+          <td>KOLOB 74760</td>
+        </tr>
+        <tr>
+          <td>YAR 87</td>
+          <td rowspan="2">TM II</td>
+        </tr>
+        <tr>
+          <td>KHAN 39 Marshall</td>
+        </tr>
+        </tbody>
+      </table>
+      <p>Other vehicles (best to worst):</p>
+      <ul>
+        <li>AMHS I or TMHS I</li>
+        <li>UOD II</li>
+        <li>OHD I</li>
+        <li>OHS II</li>
+        <li>MS I (scouts only)</li>
+      </ul>
+      <p>Don't bother with MHS; use<br>UOD II / OHD I / OHS II.</p>
+      <p>Run chained tyres only on<br>specific ice-heavy bits.</p>
+    </div>
+    <!-- Common info end -->
+    
+    <!-- Region info start -->
+    <div>
+      <form onSubmit="return loadRegion();">
+        <fieldset>
+          <legend>
+            Region
+            <select name="region" id="region">
+              <option value="yukon" selected>Yukon</option>
+            </select>
+            <input type="submit" value="Show region" />
+          </legend>
+          <div id="region-content"></div>
+        </fieldset>
+      </form>
+    </div>
+    <!-- Region info end -->
+  
+  </div>
+  <footer>
+    source: <a href="https://github.com/barbeque-squared/snowrunner-cheatsheet">github.com/barbeque-squared/snowrunner-cheatsheet</a>
+  </footer>
+</body>
+</html>

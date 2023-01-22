@@ -51,6 +51,7 @@ customElements.define('c-oversized-cargo', class OversizedCargo extends Cargo {}
 customElements.define('c-rails', class Rails extends Cargo {})
 
 // 5
+customElements.define('c-cistern', class Cistern extends Cargo {})
 customElements.define('c-industrial-boiler', class IndustrialBoiler extends Cargo {})
 customElements.define('c-oil-rig-drill', class OilRigDrill extends Cargo {})
 customElements.define('c-rail-section', class RailSection extends Cargo {})

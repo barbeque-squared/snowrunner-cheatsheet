@@ -12,3 +12,9 @@ function loadRegion() {
   document.getElementById('region-content').innerHTML = regions[region]
   return false
 }
+
+function toggleCargoSizes() {
+  document.querySelectorAll('.cargo-sizes .cargo-icons > *').forEach(
+    el => el.classList.toggle('show-name')
+  );
+}

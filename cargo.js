@@ -9,13 +9,30 @@ function camelToDash(str) {
 class Cargo extends HTMLElement {
   constructor() {
     super()
+  }
+  connectedCallback() {
     const root = this.attachShadow({mode: 'open'})
+    const span = document.createElement('span')
     const img = document.createElement('img')
     const className = this.constructor.name
+    span.dataset.name = camelToSpace(className)
     img.alt = camelToSpace(className)
     img.src = `img-black/${camelToDash(className)}.png`
-    img.style = 'width: 36px'
-    root.appendChild(img)
+    const style = document.createElement('style')
+    style.textContent = `
+    img { width: 36px; }
+    .show-name { display: inline-block; }
+    .show-name::after { content: attr(data-name); }
+    `
+    span.appendChild(img)
+    this.shadowRoot.append(style, span)
+    root.appendChild(span)
+  }
+  attributeChangedCallback(attr, prev, cur) {
+    this.shadowRoot.querySelector('span').classList = cur
+  }
+  static get observedAttributes() {
+    return ['class']
   }
 }
 

@@ -17,3 +17,12 @@ In terms of license:
 # Development
 The files in the `regions` folder deliberately have weird extensions.
 Because they are actually valid HTML, so editors will work with it, we just happen to interpret them as Javascript.
+
+## Adding icons
+To add new icons to the game:
+- from `$INSTALLATION_FOLDER/preload/paks/client`, extract the `gfx.pak`
+- go to the `[textures]/ui/flash_auto` folder
+- use QCPCT to open the various `.pct` files. You'll probably want `icons_lib_7a` but this might change in the future
+- once you've found the correct one, export it to tga (or dds)
+- with a proper image editor, extract the icon you want and add it to the `img-white` folder as png. They're usually 24x24, but higher also works.
+- `convert img-white/my-icon.png -channel RGB -negate img-black/my-icon.png`

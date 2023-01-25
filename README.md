@@ -19,7 +19,7 @@ The files in the `regions` folder deliberately have weird extensions.
 Because they are actually valid HTML, so editors will work with it, we just happen to interpret them as Javascript.
 
 ## Adding icons
-To add new icons to the game:
+
 - from `$INSTALLATION_FOLDER/preload/paks/client`, extract the `gfx.pak`
 - go to the `[textures]/ui/flash_auto` folder
 - use QCPCT to open the various `.pct` files. You'll probably want `icons_lib_7a` but this might change in the future

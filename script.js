@@ -1,5 +1,6 @@
 const regions = {
   yukon: Yukon,
+  belozersk: Belozersk,
 }
 
 function pageload() {

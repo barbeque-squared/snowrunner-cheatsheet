@@ -1,5 +1,6 @@
 const regions = {
   yukon: Yukon,
+  maine: Maine,
   tennessee: Tennessee,
   belozersk: Belozersk,
 }

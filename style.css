@@ -55,6 +55,7 @@ div.flex,
 /* region Tyre choice */
 table.notes {
     border-collapse: collapse;
+    width: max-content;
 }
 table.notes tr td {
     border: 1px solid black;

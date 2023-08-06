@@ -44,6 +44,7 @@ customElements.define('c-concrete-blocks', class ConcreteBlocks extends Cargo {}
 customElements.define('c-consumables', class Consumables extends Cargo {})
 customElements.define('c-drilling-spare-parts', class DrillingSpareParts extends Cargo {})
 customElements.define('c-fuel', class Fuel extends Cargo {})
+customElements.define('c-gold', class Gold extends Cargo {})
 customElements.define('c-metal-rolls', class MetalRolls extends Cargo {})
 customElements.define('c-oil-barrels', class OilBarrels extends Cargo {})
 customElements.define('c-packaged-sand', class PackagedSand extends Cargo {})

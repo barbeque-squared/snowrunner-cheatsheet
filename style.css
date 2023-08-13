@@ -1,5 +1,7 @@
 html {
     font-family: sans-serif;
+    background-color: white;
+    color: black;
 }
 div.flex,
 #region-content {

@@ -4,6 +4,7 @@ const regions = {
   tennessee: Tennessee,
   belozersk: Belozersk,
   ontario: Ontario,
+  scandinavia: Scandinavia,
 }
 
 function pageload() {

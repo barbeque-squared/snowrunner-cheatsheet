@@ -74,3 +74,6 @@ customElements.define('c-industrial-boiler', class IndustrialBoiler extends Carg
 customElements.define('c-oil-rig-drill', class OilRigDrill extends Cargo {})
 customElements.define('c-rail-section', class RailSection extends Cargo {})
 customElements.define('c-sequoia', class Sequoia extends Cargo {})
+
+// other
+customElements.define('c-short-logs', class ShortLogs extends Cargo {})

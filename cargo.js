@@ -77,3 +77,7 @@ customElements.define('c-sequoia', class Sequoia extends Cargo {})
 
 // other
 customElements.define('c-short-logs', class ShortLogs extends Cargo {})
+// NB: not using icons for Medium and Long logs as they're confusing
+//     this can be fixed if short logs also get an icon
+customElements.define('c-medium-logs', class MediumLogs extends Cargo {})
+customElements.define('c-long-logs', class LongLogs extends Cargo {})

@@ -5,6 +5,7 @@ const regions = {
   belozersk: Belozersk,
   ontario: Ontario,
   scandinavia: Scandinavia,
+  northcarolina: NorthCarolina,
 }
 
 function pageload() {
